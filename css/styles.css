@@ -136,8 +136,12 @@ input[type=number] {
     color: var(--dark-orange);
 }
 
+.credit__generator__container h2 {
+    max-width: 35ch;
+} 
+
 .credit__image {
-    height: 5.2rem;
+    height: 7rem;
 }
 
 .credit__generator__container h2 {
