@@ -46,17 +46,22 @@
               </div>
 
               <div class="flex column credit__generator__feature">
-                <form action="" method="POST" class="flex column">
+                <form
+                  action=""
+                  method="POST"
+                  class="flex column"
+                  id="credit__form"
+                >
                   <div class="flex credit__input__container">
                     <label for="saldo" class="capitalize">r$</label>
                     <input
-                      type="number"
+                      type="text"
                       name="saldo"
                       id="saldo"
                       placeholder="0,00"
                     />
                   </div>
-                  <button type="button" class="capitalize">
+                  <button type="submit" class="capitalize">
                     próximo <i class="fa-solid fa-chevron-right"></i>
                   </button>
                 </form>
@@ -65,11 +70,31 @@
                   <p>Não lembra suas informações?</p>
                   <a href="#">Acesse o App do FGTS</a>
                 </div>
+
+                <!-- TODO: Simulation done starts -->
+                <div class="simulation">
+                  <p>
+                    Você pode <br />
+                    receber até:
+                  </p>
+                  <strong> r$ <mark class="result">100</mark> </strong>
+                  <a href="#" class="button">Cadastrar agora</a>
+
+                  <div class="flex column">
+                    <p class="feed__back">Gostou do resultado?</p>
+                    <button type="button" class="try__again">
+                      Simular novamente
+                    </button>
+                  </div>
+                </div>
+                <!-- FIXME: Simulation done ends  -->
               </div>
             </div>
           </div>
         </div>
       </section>
     </main>
+
+    <script src="js/index.js"></script>
   </body>
 </html>
