@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simulador de crédito</title>
+    <script
+      src="https://kit.fontawesome.com/67f918e73f.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- TODO: Styles start */ -->
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- FIXME: Styles end */ -->
+  </head>
+  <body>
+    <main>
+      <section class="credit-section">
+        <div class="flex credit-section-content">
+          <div>
+            <h2 class="regular__size uppercase first__h2">
+              Antecipação saque-aniversário
+            </h2>
+
+            <h1>Simule e descubra quanto você pode liberar do seu FGTS</h1>
+            <p class="first__p">
+              Use seu dinheiro como quiser, sem comprometer sua renda mensal: o
+              desconto é feito somente uma vez ao ano, diretamente no saldo do
+              FGTS.
+            </p>
+          </div>
+
+          <div class="flex column tax__functionality__container">
+            <strong class="tax"> Taxas de <mark>1,72% a.m.</mark></strong>
+
+            <div class="flex column credit__generator__container relative">
+              <p class="absolute steps"><mark>1</mark> de <mark>2</mark></p>
+              <div>
+                <picture>
+                  <img src="assets/pig.webp" alt="" class="credit__image" />
+                </picture>
+              </div>
+              <h2>Qual o seu saldo no FGTS?</h2>
+              <div class="flex column credit__generator__feature">
+                <form action="" method="POST" class="flex column">
+                  <div class="flex credit__input__container">
+                    <label for="saldo" class="capitalize">r$</label>
+                    <input
+                      type="number"
+                      name="saldo"
+                      id="saldo"
+                      placeholder="0,00"
+                    />
+                  </div>
+                  <button type="button" class="capitalize">
+                    próximo <i class="fa-solid fa-chevron-right"></i>
+                  </button>
+                </form>
+
+                <div class="credit__generator__content flex column">
+                  <p>Não lembra suas informações?</p>
+                  <a href="#">Acesse o App do FGTS</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
