@@ -35,11 +35,24 @@ const creditForm = document.getElementById("credit__form");
 
 creditForm.addEventListener("submit", (e) => {
   const inputValue = saldo.value;
-  let creditValue = inputValue * 0.6;
+  const noDisplay = document.querySelectorAll(".error__happen");
+  const simulationErrorMessage = document.querySelector(".simulation__error");
 
-  const result = document.querySelector(".result");
-  result.innerHTML = creditValue;
+  if (parseInt(inputValue) >= 300) {
+    let creditValue = inputValue * 0.6;
+    noDisplay.forEach((noShow) => {
+      removeClass(noShow, classToHideElement);
+    });
 
+    const result = document.querySelector(".result");
+    result.innerHTML = creditValue;
+    removeClass(simulationErrorMessage, classToDisplayElement);
+  } else {
+    noDisplay.forEach((noShow) => {
+      addClass(noShow, classToHideElement);
+    });
+    addClass(simulationErrorMessage, classToDisplayElement);
+  }
   addClass(creditForm, classToHideElement);
   addClass(creditContent, classToHideElement);
   addClass(simulationDoneContainer, classToDisplayElement);

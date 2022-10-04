@@ -262,11 +262,29 @@ input[type=number] {
     display: none;
 }
 
+.simulation__error,
 .simulation p {
     font-size: 2rem;
     color: var(--black);
     text-align: center;
     font-weight: 700;
+}
+
+.simulation__error.active {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+}
+
+.simulation .error__happen.hide {
+    display: none;
+}
+
+.simulation__error {
+    display: none;
+}
+
+.simulation__error.active {
+    display: initial;
 }
 
 .simulation strong {
