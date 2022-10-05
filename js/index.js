@@ -70,6 +70,21 @@ tryAgain.addEventListener("click", (e) => {
   saldo.value = null;
 });
 
+const ua = detect.parse(navigator.userAgent);
+const appButton = document.querySelector(".app");
+
+if (ua.device.family === "iPhone") {
+  appButton.setAttribute(
+    "href",
+    "https://apps.apple.com/br/app/fgts/id1038441027"
+  );
+} else {
+  appButton.setAttribute(
+    "href",
+    "https://play.google.com/store/apps/details?id=br.gov.caixa.fgts.trabalhador&hl=pt_BR&gl=US"
+  );
+}
+
 /* TODO: Functions start */
 
 function addClass(elementToUse, classToAdd) {
